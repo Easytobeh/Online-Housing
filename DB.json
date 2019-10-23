@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+        
+            "username": "john",
+            "password": "j123"
+        },
+        {
+            "username": "mike",
+            "password": "m123"
+        },
+        {
+            "username": "smith",
+            "password": "s123"
+        }
+
+    ],
+   
+    "houselist": [
+
+    ]
+}
