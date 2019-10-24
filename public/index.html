@@ -16,8 +16,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a id="home-btn" class="navbar-brand" style="color: beige"> <i class="fa fa-home"
-                style="color: beige"></i>Home</a>
+        <i class="fa fa-home" style="color: beige"></i>
+        <a href="index.html" id="home-btn" class="navbar-brand" style="color: beige">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,8 +35,7 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
                 </nav>
-                <h5><strong><a href="#myModal" data-toggle="modal" class="nav-item nav-link" style="color: beige">Sign
-                            In</a></strong></h5>
+                <h5><strong><a href="#myModal" data-toggle="modal" class="nav-item nav-link" style="color: beige">Signin</a></strong></h5>
             </div>
         </div>
     </nav>
@@ -49,6 +48,11 @@
         </div>
     </div>
     <div>
+    </div>
+    <div class="container paddingPagetop ">
+        <div id="houselist" class="row target ">
+    
+        </div>
     </div>
 
     <!-- Modal HTML -->
@@ -63,7 +67,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="">
+                    <form >
                         <div class="form-group">
                             <i class="fa fa-user"></i>
                             <input type="text" class="form-control" id="user" placeholder="Username"
@@ -76,6 +80,9 @@
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary btn-block btn-lg" id="login" value="Login">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="NewUser.html">New User Signup</a>
                         </div>
                     </form>
 

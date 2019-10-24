@@ -3,15 +3,44 @@
         {
         
             "username": "john",
-            "password": "j123"
+            "password": "j123",
+            "list":[
+                {
+                   "id": 3,
+                   "imgUrl": "images/apartment/2.jpeg",
+                   "description": "1-Room Mini-flat",
+                   "location": "66,Pedro Road, Somolu",
+                   "price": "₦450,000",
+                   "Agent": "rapheal.benitez@adronhomes.com",
+                   "status": "Available",
+                   "Phone": "08101234567"
+                }
+            ]
+
+            
         },
         {
             "username": "mike",
-            "password": "m123"
+            "password": "m123",
+            "list":[
+                {
+                   "id": 6,
+                   "imgUrl": "images/apartment/6.jpeg",
+                   "description": "2 Bedroom Flat, 3 toilets",
+                   "location": "40 Wemco Road, Ogba, Ikeja",
+                   "price": "₦1,450,000",
+                   "Agent": "michael.scoffield@landlordhero.com",
+                   "status": "Available",
+                   "Phone": "07061234567"
+                }
+            ]
+
+            
         },
         {
             "username": "smith",
-            "password": "s123"
+            "password": "s123",
+            "list":[]
         }
 
     ],
