@@ -1,3 +1,8 @@
+.container{
+	margin-top: 20px;
+}
+
+
 .modal-login {
 		color: #636363;
 		width: 350px;
@@ -59,4 +64,26 @@
     .modal-title{
         margin-top: 20px;
         margin-left: 5px;
-    }
+	}
+
+	 .wrapper{
+		width: 50%;
+		margin-left: 20%;
+		background-color: rgb(142, 206, 197);
+	 }
+	 
+	 #signup-form form{
+		 width: 500px;
+		 margin-left: 400px;
+		 margin-top: 150px;
+		 padding: 20px;
+		 border: 5px solid aquamarine;
+		
+	 }
+
+	#signup-form input{
+	margin-left: 0 ;
+	}
+
+
+	 

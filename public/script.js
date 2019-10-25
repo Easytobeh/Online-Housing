@@ -18,13 +18,14 @@ $(document).ready(function () {
             cache: false,
             dataType: 'json',
             success: function (data) {
+                console.log("users" + data);
               
                 $.each(data, function (i, UserObj) {
                     if (UserObj.username == user_name) //user exists
                     {
                         if (UserObj.password == pass) {
                             //listArray = UserObj.list;
-                            sessionStorage.setItem('index', i);
+                            sessionStorage.setItem('id', UserObj.id);
                             sessionStorage.setItem('currentUser', user_name);
                             foundUser = true;   
                         }
@@ -50,7 +51,10 @@ $(document).ready(function () {
         });
     });/**********************End user Signin******************************** */
 
-  
+/***********************  SIGN UP    ********************** */
+    $("#new-user").on("click", function () {
+        alert("You clicked");
+    });
 
 });
 
