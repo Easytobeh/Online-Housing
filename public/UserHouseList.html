@@ -11,29 +11,35 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Sacramento|Shadows+Into+Light+Two&display=swap"
+        rel="stylesheet">
     <title>User House List</title>
 </head>
 
 <body class="apartments-bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div id="msg" style="color: beige; margin: 5px 20px 5px;">
+            <!-- Message showing Specific User that is logged in generated from userhouselist.js-->
+        </div>
          <i class="fa fa-home" style="color: beige"></i>
          <a href="index.html" id="home-btn" class="navbar-brand" style="color: beige">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+       
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
+                <li>
                 <a id="apartments" class="nav-link " style="color: beige" href="#">Apartments</a><span
                     class="sr-only">(current)</span></a>
                 </li>
+                                
                 <li class="nav-item">
                     <a id="logout" class="nav-link text-color" style="color: beige" href="#">Logout</a>
                 </li>
             </ul>
-            <div id="msg" class="navbar-nav ml-auto">
-               <!-- Message showing Specific User that is logged in -->
+            <div class="navbar-nav ml-auto">
+                <h5><strong><a href="NewHouseList.html" class="nav-item nav-link" style="color: beige"> Add New House</a></strong>
+                </h5>
             </div>
+            
         </div>
     </nav>
     

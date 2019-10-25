@@ -51,15 +51,40 @@ $(document).ready(function () {
         });
     });/**********************End user Signin******************************** */
 
-/***********************  SIGN UP    ********************** */
+/***********************  NEW USER SIGN UP    ********************** */
     $("#new-user").on("click", function () {
-        alert("You clicked");
+        var newUsername = $("#new-username").val();
+        var newPassword = $("#new-userpassword").val();
+        var confirmPass = $("#new-userpassword2").val();
+        event.preventDefault();
+
+        if (newPassword == confirmPass) {
+            var NewUser = {
+                "username": newUsername,
+                "password": newPassword
+            };
+            
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:3000/users",
+                data: NewUser,
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: "json",
+                success: function () {
+                    alert(newUsername + " has been successfully added");
+                },
+                error: function () {
+                    alert("There was error saving data");
+                    window.location.href = "index.html";
+                }
+            });
+        }
+        
+        else {
+            alert("password do not match");
+        }
     });
 
 });
-
-
-
-
 
 

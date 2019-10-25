@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Signup</title>
+    <title>Create House List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Sacramento|Shadows+Into+Light+Two&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -23,64 +25,68 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <a id="apartments" class="nav-link " style="color: beige" href="#">Apartments</a><span
+                <a id="logout" class="nav-link " style="color: beige" href="#">Logout</a><span
                     class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
-                <h5><strong><a href="#myModal" data-toggle="modal" class="nav-item nav-link" style="color: beige">New House List Page</a></strong>
+                <h5><strong><a href="#myModal" data-toggle="modal" class="nav-item nav-link" style="color: beige"> New House List Page</a></strong>
                 </h5>
             </div>
         </div>
     </nav>
 
-    <div class="wrapper">
+    <div id="signup-form" class="modal-login">
         <form>
-            <div class="form-row">
-                <div class="form-group col-md-6 modal-content>
-            <label for=" inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <p class="modal-title">
+                <strong><h4 class="modal-title">New Apartment Entry</h4></strong>
+            </p>
+         
+            <div class="modal-header">
+                <img src="images/house-avatar.jpg" class="float-image-right">
+                    <h4 id="msg" style="margin-top: 50px;"><!--Message loaded from userhouselist.js-->></h4>
+
+    
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label">Description:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="description" placeholder="A Room Mini-flat"
+                        required="required">
                 </div>
-                <div class="form-group col-md-6 modal-content>
-            <label for=" inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+            <div class="form-group row">
+                <label for="location" class="col-sm-2 col-form-label">Location</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="location" placeholder="Decagon Housing Lekki"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Contact Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="messi.ronaldo@decagon.com"
+                        required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="price" class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="price" placeholder="Price in naira" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="image" class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" id="image" placeholder="Upload image" required="required">
                 </div>
             </div>
             <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input id="new-house" type="submit" class="btn btn-primary btn-block btn-lg" value="Update House List">
             </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+    
+    
     </div>
 
 
@@ -94,7 +100,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="UserHouseList.js"></script>
 </body>
 
 </html>
