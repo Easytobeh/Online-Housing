@@ -62,8 +62,11 @@
 		color: #999;
     }
     .modal-title{
-        margin-top: 20px;
-        margin-left: 5px;
+        margin-top: 10px;
+		margin-left: 10px;
+		font-family: 'Sacramento', cursive;
+		font-weight: 300px;
+		font-size: 3.125rem;
 	}
 
 	 .wrapper{
@@ -75,7 +78,7 @@
 	 #signup-form form{
 		 width: 500px;
 		 margin-left: 400px;
-		 margin-top: 150px;
+		 margin-top: 50px;
 		 padding: 20px;
 		 border: 5px solid aquamarine;
 		
@@ -86,4 +89,12 @@
 	}
 
 
-	 
+.float-image-right{
+  width: 50%;
+  border-radius: 50%;
+  border: solid 10px #E4F9F5;
+  float: right;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+ 

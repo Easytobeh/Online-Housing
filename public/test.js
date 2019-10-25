@@ -1,21 +1,20 @@
 $(document).ready(function () {
     $("#btn").on("click", function () {
-
+        event.preventDefault();
       
         var Obj = {
             
-            "username": "mark",
-            "password": "m123",
+            'username': username,
+            "password": password,
             "list": [
-                {
-
-                    "imgUrl": "images/apartment/2.jpeg",
-                    "description": "1-Room Mini-flat",
-                    "location": "66,Pedro Road, Somolu",
-                    "price": "₦450,000",
-                    "Agent": "rapheal.benitez@adronhomes.com",
+                {                   
+                    "imgUrl": "img/apartment/7.jpeg",
+                    "description": "Block of 3 Bedrooms Apartment",
+                    "location": "KM 12, Muhammad Buhari Express Way, Lagos",
+                    "price": "₦4,000,000/annum/apartment",
+                    "Agent": "seriki@adronhomes.com",
                     "status": "Available",
-                    "Phone": "08101234567"
+                    "Phone": "06061234567"
                 }
             ]
 
@@ -23,10 +22,9 @@ $(document).ready(function () {
     
         $.ajax({
             type: "POST",
-            url: "http://localhost:3000/users",
+            url: "http://localhost:3000/users/1",
             data: Obj,
-            contentType: 'application/x-www-form-urlencoded',
-            dataType: "json",
+            ContentType: "application/json",
             success: function () {
                 console.log("success");
             }
